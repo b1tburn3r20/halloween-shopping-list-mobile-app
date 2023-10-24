@@ -48,13 +48,21 @@ header{
     color: rgba(255, 255, 255, .3);   
 }
 #add-button{
-    padding: 1vh;
+    padding: 1rem;
     border-radius: 15px;
     background-color: #9d91ff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 110%;
     margin-bottom: 4rem;
+    box-shadow: 2px 2px 1px rgba(125, 97, 218, 0.831);
+    border: none;
+
+}
+#add-button:active{
+    margin-left: .3vw;
+    margin-top: .3vh;
+    box-shadow: 1px 1px 1px rgba(125, 97, 218, 0.831);
 }
 #shopping-list{
     border-top: 1vh dashed rgba(255, 255, 255, .4);
