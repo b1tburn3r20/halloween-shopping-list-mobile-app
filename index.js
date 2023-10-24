@@ -14,6 +14,7 @@ const inputField = document.getElementById('input-field')
 
 onValue(groceriesInDB, function(snapshot){
     if(snapshot.exists()){
+
         clearShoppingList()
         let groceriesArray = Object.entries(snapshot.val())
         groceriesArray.reverse()
@@ -23,6 +24,7 @@ onValue(groceriesInDB, function(snapshot){
         }
     }
     else{
+        clearShoppingList()
         let noItemsMessage = document.createElement('p')
         noItemsMessage.className = "no-items-message" 
         noItemsMessage.textContent = "no items in cart"
