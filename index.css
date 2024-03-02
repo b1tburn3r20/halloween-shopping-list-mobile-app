@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root{
+    --spring-pink-light: rgb(253, 249, 251);
+    --spring-pink-salmon: rgb(255, 122, 122);
+    --spring-pink-middle: rgb(226, 172, 172);
+    --spring-pink-light-two: rgb(255, 220, 220);
+    --lax-gray: rgb(26,26,26);
+}
 body{
     font-family: 'Poppins', sans-serif;
     /* background-color: #9d91ff; */
-    background-color: rgb(15, 12, 27);
-    color: rgb(214, 214, 214);
+    background-color: var(--spring-pink-light);
+    color: rgb(46, 46, 46);
     font-weight: 500;
+}
+img{
+    padding: 1rem 0rem 2rem 0rem;
 }
 header{
     display: flex;
@@ -18,7 +29,7 @@ header{
     max-width: 300px;
     justify-content: center;
     text-align: center;
-    border: 1px solid #9d91ff;
+    border: 2px solid var(--spring-pink-middle);
     border-radius: 15px;
     padding: 1rem;
 }
@@ -27,36 +38,39 @@ header{
     flex-direction: column;
 }
 #title-top{
-    color: rgb(255, 250, 100);
+    color: rgb(209, 69, 59);
     text-shadow: 0px 0px 30px rgb(255, 166, 50);
 
 }
 #title-bottom{
-    color: rgba(125, 97, 218, 0.831);
+    color: rgba(91, 91, 91, 0.831);
 }
 #input-field{
     padding: 1vh;
     border-radius: 15px;
     background-color: transparent;
+    outline: none;
+    border: 2px solid var(--spring-pink-middle);
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: rgb(214, 214, 214);
+    color: rgb(112, 165, 255);
     font-size: 110%;
     margin-bottom: .5rem;
 }
 #input-field::placeholder{
-    color: rgba(255, 255, 255, .3);   
+    color:var(--lax-gray);   
 }
 #add-button{
     padding: 1rem;
     border-radius: 15px;
-    background-color: #9d91ff;
+    background-color: var(--spring-pink-light-two);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 110%;
     margin-bottom: 4rem;
-    box-shadow: 2px 2px 1px rgba(125, 97, 218, 0.831);
+    box-shadow: 2px 2px 1px var(--spring-pink-middle);
     border: none;
+    color: var(--lax-gray);
 
 }
 #add-button:active{
@@ -65,8 +79,8 @@ header{
     box-shadow: 1px 1px 1px rgba(125, 97, 218, 0.831);
 }
 #shopping-list{
-    border-top: 1vh dashed rgba(255, 255, 255, .4);
-    border-bottom: 1vh dashed rgba(255, 255, 255, .4);
+    border-top: 1vh dashed rgba(187, 0, 0, 0.4);
+    border-bottom: 1vh dashed rgba(187, 0, 0, 0.4);
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -76,7 +90,7 @@ header{
     
 }
 .no-items-message{
-    color: rgb(214, 214, 214);
+    color: var(--lax-gray);
     display: flex;
     align-items: center;
     text-align: center;
@@ -89,8 +103,8 @@ header{
     margin: .2rem;
     border-radius: 15px;
     border: none;
-    color: rgb(214, 214, 214);
+    color: var(--lax-gray);
     background-color: transparent;
-    border: 2px solid #9d91ff;
+    border: 2px solid var(--spring-pink-middle);
     flex-grow: 1;
 }
